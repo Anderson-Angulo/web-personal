@@ -6,6 +6,7 @@ const menu=document.querySelector('.nav__list'),
     
 
 
+
 function toggleShow(target,btnOpen,btnClose=null,className="open"){
   if(!btnClose){
     btnOpen.addEventListener('click',()=>{
@@ -22,10 +23,12 @@ function toggleShow(target,btnOpen,btnClose=null,className="open"){
       target.querySelector('.portfolio__popup-subtitle span').innerHTML=projectCard.querySelector('.portfolio__title').innerHTML
       target.querySelector('.portfolio__popup-body').innerHTML=projectCard.querySelector('.portfolio__details').innerHTML
     }
+    document.body.style.overflow="hidden"
   })
 
   btnClose.addEventListener('click',()=>{
     target.classList.remove(className)
+        document.body.style.overflow="auto"
   })
 
 }
