@@ -54,7 +54,7 @@
     </section>
   </header>
   <main class="main">
-    <section class="section about">
+    <section class="section about" id="about">
       <h2 data-heading="My intro" class="section__title">About me</h2>
       <div class="about__container  container grid">
           <div class="about__picture">
@@ -89,7 +89,7 @@
       </div>
         
     </section>
-    <section class="section qualification">
+    <section class="section qualification" id="qualification">
       <h2 data-heading="My journey" class="section__title">Qualification</h2>
       <div class="qualification__container container grid">
         <div class="experience">
@@ -273,13 +273,12 @@
         </div>
       </div>
     </section> -->
-    <section class="section portfolio">
+    <section class="section portfolio" id="portfolio">
       <h2 data-heading="My portfolio" class="section__title">Projects</h2>
       <div class="portfolio__filters">
         <span class="portfolio__item active-portfolio" data-filter="all">All</span>
-        <span class="portfolio__item" data-filter=".web">Web</span>
-        <span class="portfolio__item" data-filter=".app">App</span>
-        <span class="portfolio__item" data-filter=".design">Design</span>
+        <span class="portfolio__item" data-filter=".app">Web App</span>
+        <span class="portfolio__item" data-filter=".web">Landing Page</span>
       </div>
       <div class="portfolio__container grid container">
         <div class="portfolio__card mix web">
@@ -297,7 +296,7 @@
               </ul>
           </div>
         </div>
-        <div class="portfolio__card mix design">
+        <div class="portfolio__card mix app">
           <img src="./img/work-2.webp" alt="" class="portfolio__img">
           <h3 class="portfolio__title">Design</h3>
           <span class="portfolio__button">Demo <i class="uil uil-arrow-right portfolio__button-icon"></i></span>
@@ -386,12 +385,11 @@
         </div>
       </div>   
     </div>
-    <section class="section contact">
+    <section class="section contact" id="contact">
       <h2 data-heading="Let's get in touch" class="section__title">Contact me</h2>
       <div class="contact__container grid container">
-        <div class="contact__content">
-          <div class="contact__info">
-
+        <div class="contact__content dev grid">
+          <div class="contact__info grid">
             <div class="contact__card">
               <i class="uil  uil-envelope-edit contact__card-icon"></i>
               <h3 class="contact__card-title">Messenger</h3>

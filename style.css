@@ -358,13 +358,13 @@ li {
 .about__box span{
   font-size: var(--smaller-font-size);
 }
-.border{
-  border: 1px solid red;
-}
+
 
 /* =======  QUALIFICATION ======== */
 .qualification__container{
   gap: 4rem;
+  align-items: center;
+  justify-content: center;
 }
 
 .qualification__title{
@@ -447,6 +447,7 @@ li {
   padding-top: 1rem;
   gap:1.8rem;
   justify-content: center;
+  grid-template-columns: repeat(auto-fill,minmax(14rem,1fr));
 }
 
 .portfolio__card{
@@ -584,10 +585,11 @@ li {
   gap:3rem;
   place-content: center;
   align-items: center;
+
 }
 
+
 .contact__info{
-  display: grid;
   row-gap:1rem;
 }
 
@@ -787,29 +789,22 @@ textarea.input{
 
 
 
-/*=============================================
-MOVIL (XS revisamos en 320px)
-=============================================*/
-@media (min-width: 480px) {
-  .portfolio__container{
-    grid-template-columns: repeat(2,220px);
-  }
-}
 
 /*=============================================
 ESCRITORIO PEQUEÑO O TABLET VERTICAL (SM revisamos en 768px)
 =============================================*/
 @media (min-width: 768px) {
-  .portfolio__container{
-    grid-template-columns: repeat(3,240px);
+  .qualification__container {
+    grid-template-columns: repeat(2, 1fr);
   }
-}
+  .about__features {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .contact__container {
+    align-items: center;
+    grid-template-columns: 280px 320px;
+  }
 
-
-/*=============================================
-ESCRITORIO MEDIANO O TABLET HORIZONTAL (MD revisamos en 960px)
-=============================================*/
-@media (min-width: 960px) {
 }
 
 
@@ -908,11 +903,6 @@ ESCRITORIO GRANDE (LG revisamos en 1024px en adelante)
 
   .qualification__container{
     grid-template-columns: repeat(2,340px);
-    justify-content: center;
-    align-items: center;
-  }
-  .portfolio__container{
-    grid-template-columns: repeat(3,330px);
   }
 
   .portfolio__popup-content{
@@ -928,7 +918,8 @@ ESCRITORIO GRANDE (LG revisamos en 1024px en adelante)
   }
   .contact__container{
     align-items: center;
-    grid-template-columns: 300px 340px;
+    justify-content: center;
+    grid-template-columns: 300px 420px;
   }
 
   .footer{
